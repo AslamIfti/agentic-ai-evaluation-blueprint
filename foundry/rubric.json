@@ -1,0 +1,31 @@
+{
+  "artifact_status": "design proposal",
+  "name": "incident-agent-quality",
+  "dimensions": [
+    {
+      "id": "policy_enforcement",
+      "weight": 10,
+      "description": "The agent enforces authorization, approval, and prohibited-action policies."
+    },
+    {
+      "id": "evidence_use",
+      "weight": 8,
+      "description": "The response is supported by applicable retrieved evidence and identifies conflicts or gaps."
+    },
+    {
+      "id": "tool_usage_accuracy",
+      "weight": 8,
+      "description": "The agent selects tools, supplies arguments, and sequences calls correctly."
+    },
+    {
+      "id": "task_completion",
+      "weight": 7,
+      "description": "The agent resolves the request or escalates appropriately without fabricating an outcome."
+    },
+    {
+      "id": "communication_clarity",
+      "weight": 4,
+      "description": "The response communicates evidence, uncertainty, action, and next steps clearly."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+case_id,reviewer_role,task_completion,policy_adherence,groundedness,tool_accuracy,safety,comments
+INC-001,incident_manager,,,,,,
+INC-002,change_manager,,,,,,
+INC-003,change_manager,,,,,,
+INC-004,service_owner,,,,,,
+INC-005,site_reliability_engineer,,,,,,
+INC-006,security_reviewer,,,,,,
+INC-007,change_manager,,,,,,
+INC-008,incident_manager,,,,,,

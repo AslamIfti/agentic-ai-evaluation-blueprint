@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentic-ai-evaluation-blueprint"
+version = "0.1.0"
+description = "A portfolio blueprint for evaluating enterprise agents in Microsoft Foundry and Databricks MLflow."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "S.H. Mohamed Iftiquar Aslam" }]
+keywords = ["agentic-ai", "evaluation", "azure-ai-foundry", "databricks", "mlflow", "agentops"]
+
+[project.optional-dependencies]
+foundry = ["azure-ai-projects>=2.4.0", "azure-identity>=1.17.0"]
+databricks = ["mlflow[databricks]>=3.14.0"]
+dev = ["pytest>=8.0", "ruff>=0.8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
